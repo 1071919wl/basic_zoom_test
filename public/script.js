@@ -1,4 +1,4 @@
-const socket = io('/') //root path of application socket
+const socket = io('/')  //root path of application socket
 const videoGrid = document.getElementById('video-grid')
 const myPeer = new Peer(undefined, { 
     host: '/',
@@ -9,7 +9,7 @@ myVideo.muted = true
 const peers = {}
 
 
-navigator.mediaDevices.getUserMedia({
+navigator.mediaDevices.getUserMedia({   // prompts the user for permission to use a media input which produces a MediaStream
     video: true,
     audio: true
 }).then(stream => {
